@@ -26,7 +26,10 @@ jobs:
 
       - name: Build project
         run: npm run build
-
+        
+      - name: project preview
+        run: npm run preview
+        
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
